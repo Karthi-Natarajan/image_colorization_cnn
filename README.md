@@ -1,10 +1,35 @@
+# Image Colorization using CNN
 
-# Image Colorization CNN Project
+This project implements a **Convolutional Neural Network (CNN)** for automatic image colorization.  
+It takes grayscale images as input and predicts their colored versions.
 
-This is a simple CNN-based image colorization project.
+---
 
-## Files
-- `app.py`: Main script to run the colorization.
-- `model.py`: CNN model definition.
-- `dataset/`: Folder to store images.
-- `requirements.txt`: Python dependencies.
+## Features
+- Deep learning model built using **TensorFlow/Keras**  
+- Pre-trained weights supported (`.h5` model files)  
+- Flask web app interface for uploading and testing images  
+- Example dataset and training script included  
+- Sample outputs are provided in the `colorized_samples/` folder  
+
+---
+
+## Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/Karthi-Natarajan/image_colorization_cnn.git
+cd image_colorization_cnn
+
+python -m venv venv
+source venv/bin/activate    # Linux/Mac
+venv\Scripts\activate       # Windows
+
+
+pip install -r requirements.txt
+
+#To run train.py
+python train.py
+
+#To run app.py
+python app.py
