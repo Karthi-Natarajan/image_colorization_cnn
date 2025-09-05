@@ -1,0 +1,21 @@
+# Ignore model checkpoints
+*.h5
+
+# Ignore generated images
+colorized_samples/
+# If you have an examples folder inside colorized_samples to keep:
+!colorized_samples/examples/
+
+# Ignore Python cache
+__pycache__/
+*.pyc
+
+# Ignore virtual environment
+venv/
+.env
+
+# Ignore logs
+*.log
+
+# Ignore dataset
+dataset/
